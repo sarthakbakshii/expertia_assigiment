@@ -1,0 +1,146 @@
+$base-color: #6859d6;
+$base-color1: #5646d4;
+$base-brown : #30303A;
+$base-brown1 :rgba(72, 72, 85, 0.966);
+
+.overview{
+    background-color: #F6F7FC;
+    width: 100vw;
+    border: 1xp solid;
+    padding: 20px;
+
+    h3{
+        font-weight: 300;
+        font-family: sans-serif;
+        text-align: left;
+        display: flex;
+        gap: 10px;
+        justify-content: flex-start;
+        align-items: center;
+
+        .circle{
+            height: 35px ;
+            width: 35px;
+            border-radius: 50%;
+            background-color: white;
+            border: 1px solid rgb(116, 116, 116);
+        }
+    }
+
+    .container{
+        // border: 1px solid;
+        border-radius: 10px;
+        background-color: white;
+
+        .statusBar{
+            padding: 30px;
+            box-sizing: border-box;
+            height: 100px;
+            // border: 1px solid;
+            display: flex;
+            justify-content: space-between;
+
+            .staus{
+                display: flex;
+                color: rgba(128, 128, 128, 0.61);
+                // border: 1px solid;
+                height: 50px;
+                justify-content: center;
+                align-items: center;
+                font-size: 18px;
+                gap: 10px;
+                span{
+                    display: inline-block;
+                    // border : 1px solid;
+                    width: 150px;
+                    height: 4px;
+                    background-color: rgba(128, 128, 128, 0.61);
+                }
+                
+            }
+
+            .staus-active{
+                color: $base-color;
+                span{
+                    background-color: $base-color;
+                }
+            }
+        }
+
+        form{
+            padding: 20px;
+            box-sizing: border-box;
+            // border: 1px solid;
+
+            .stepOne{
+
+                .top{
+                    display: flex;
+                    justify-content: flex-start;
+                    gap: 50px;
+                    .inputSec{
+                        // border: 1px solid;
+                        width: 400px;
+                        font-family: sans-serif;
+                        gap: 6px;
+                        height: 70px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: flex-start;
+                        font-size: 14px;
+                        color:  gray;
+
+                        input{
+                            width: 300px;
+                            padding-left: 20px;
+                            height: 30px;
+                            border-radius: 25px;
+                            outline: none;
+                            border: 1px solid gray;
+                        }
+                    }
+                }
+
+                .bottom{
+                    display: flex;
+                    gap: 10px;
+                    margin-top: 20px;
+                    .fileUpload{
+                        border:  1px dashed;
+                       cursor: pointer;
+                        width: 50%;
+                        height: 200px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 50px;
+                        gap: 20px;
+                        color: gray;
+                        border-radius: 10px;
+                        flex-wrap: wrap;
+
+                        .text{
+                            border-radius: 20px;
+                            width:300px;
+                            height: 30px
+                        };
+                    }
+                }
+            }
+        }
+
+
+        .nextBtn{
+            width: 150px;
+            margin-top: 5px;
+            height: 35px;
+            border-radius: 25px;
+            font-size: 14px;
+            border: none;
+            font-weight: 600;
+            color: white;
+            background-color: $base-color;
+        }
+    }
+}
